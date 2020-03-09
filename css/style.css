@@ -1,0 +1,299 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  line-height: 1.6; }
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out; }
+
+select:invalid {
+  color: gray; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600; }
+
+h1 {
+  font-size: 6rem; }
+
+h2 {
+  font-size: 3rem; }
+
+.bg-primary {
+  background: #e60012;
+  color: #ffffff !important; }
+
+.mt-100 {
+  margin-top: 10rem; }
+
+.mt-90 {
+  margin-top: 9rem; }
+
+.mt-80 {
+  margin-top: 8rem; }
+
+.mt-70 {
+  margin-top: 7rem; }
+
+.mt-60 {
+  margin-top: 6rem; }
+
+.mt-50 {
+  margin-top: 5rem; }
+
+.main-btn {
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  font-weight: 500 !important; }
+  .main-btn img,
+  .main-btn svg {
+    margin-right: 2rem; }
+
+.btn-regular {
+  padding: 1.3rem 4rem !important;
+  font-size: 1.4rem !important; }
+
+.btn-large {
+  padding: 1.5rem 4rem !important; }
+
+.main-btn.bg-primary:hover {
+  background: #01813f; }
+
+.ghost-btn:link,
+.ghost-btn:visited {
+  padding: 1rem 3.5rem;
+  border: 1px solid;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 1.4rem; }
+  .ghost-btn:link.border-white,
+  .ghost-btn:visited.border-white {
+    border-color: #ffffff; }
+  .ghost-btn:link:hover,
+  .ghost-btn:visited:hover {
+    background: #e60012;
+    border: 1px solid transparent; }
+
+.ghost-btn--white {
+  color: #ffffff; }
+
+.submit-btn {
+  width: 100%;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  color: #5a5a5a;
+  cursor: pointer;
+  background: #ffffff;
+  transition: all 0.2s ease-in-out; }
+  .submit-btn:hover, .submit-btn:active, .submit-btn:focus {
+    background-color: #e60012;
+    color: #ffffff; }
+
+.product-card {
+  background-size: cover !important;
+  padding: 3rem 4rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative; }
+  .product-card__image-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem; }
+  .product-card__image {
+    margin-right: 1rem; }
+  .product-card__image-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 20%; }
+  .product-card__title {
+    font-weight: 300;
+    width: 50%;
+    line-height: 1.2;
+    margin-bottom: 2rem; }
+  .product-card__description {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    width: 80%;
+    z-index: 10; }
+  .product-card__outimage {
+    position: absolute;
+    right: -16rem; }
+  .product-card--1 {
+    background: url("../img/ignition-parts-bg.jpg") no-repeat;
+    background-position: center center; }
+  .product-card--2 {
+    background: url("../img/censor-parts-bg.jpg") no-repeat;
+    background-position: center center; }
+    .product-card--2 .product-card__description {
+      width: 95%; }
+
+.card-col-1 {
+  grid-column: col-start 1 / col-start 6; }
+
+.card-col-2 {
+  grid-column: col-start 7 / col-end 11; }
+
+.container-grid {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.full-column {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.grid-center {
+  display: grid;
+  grid-template-columns: [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end];
+  grid-column-gap: 3rem; }
+
+.header {
+  grid-column: full-start / full-end; }
+
+.main-nav {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem; }
+  .main-nav__logo {
+    width: 17.6rem; }
+  .main-nav__logo-image {
+    width: 100%; }
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  align-items: center; }
+  .main-menu__link:link, .main-menu__link:visited {
+    padding: 1rem 1.8rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #5a5a5a; }
+  .main-menu__link:hover {
+    color: #e60012; }
+  .main-menu .main-btn {
+    margin-left: 5rem; }
+
+.hero {
+  background: url("../img/hero-image.jpg") no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  align-items: center; }
+  .hero .main-btn {
+    margin-top: 2rem; }
+
+.hero-content {
+  grid-column: center-start / center-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.header-main-heading {
+  font-size: 6rem;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 3rem; }
+  .header-main-heading span {
+    font-size: 4rem;
+    display: block;
+    font-weight: 400; }
+  .header-main-heading::after {
+    content: "";
+    background: #e60012;
+    height: 2px;
+    width: 10rem;
+    margin: 2rem 0;
+    display: block; }
+
+.header-main-description {
+  color: #ffffff;
+  width: 60%;
+  line-height: 1.8;
+  padding: 1.5rem 0; }
+
+main {
+  grid-column: full-start / full-end; }
+
+.boxes-container {
+  grid-column: center-start/center-end; }
+
+.products-container {
+  grid-column: center-start / center-end; }
+
+.partfinder-box {
+  grid-column: col-start 1 / col-end 3;
+  background: #212121;
+  padding: 2.5rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26rem; }
+  .partfinder-box__title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem; }
+  .partfinder-box__desc {
+    font-size: 1.3rem; }
+  .partfinder-box__form {
+    margin-top: 3rem; }
+
+.partfinder-form__group {
+  border: none;
+  outline: none;
+  margin-bottom: 1.8rem; }
+
+.partfinder-form label {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.partfinder-form select {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #696969;
+  color: #838383;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-family: "Montserrat", sans-serif; }
+
+.partfinder-form__submit {
+  margin-top: 2rem; }
+
+.featured-products {
+  grid-column: col-start 4 / col-end 12; }
+
+.title-card-container {
+  grid-column: center-start / center-end; }

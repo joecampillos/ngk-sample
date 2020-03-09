@@ -1,0 +1,40 @@
+.main-nav {
+  background: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+
+  &__logo {
+    width: 17.6rem;
+  }
+
+  &__logo-image {
+    width: 100%;
+  }
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  &__list {
+  }
+
+  &__link:link,
+  &__link:visited {
+    padding: 1rem 1.8rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $color-text-dark;
+  }
+
+  &__link:hover {
+    color: $color-primary;
+  }
+
+  .main-btn {
+    margin-left: 5rem;
+  }
+}

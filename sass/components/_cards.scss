@@ -1,0 +1,77 @@
+//      MAIN CARDS
+
+.product-card {
+  background-size: cover !important;
+  padding: 3rem 4rem;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+
+  &__image-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  &__image {
+    margin-right: 1rem;
+  }
+
+  &__image-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 20%;
+  }
+
+  &__title {
+    font-weight: 300;
+    width: 50%;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    width: 80%;
+    z-index: 10;
+  }
+
+  &__button {
+  }
+
+  &__outimage {
+    position: absolute;
+    right: -16rem;
+  }
+
+  &--1 {
+    background: url("../img/ignition-parts-bg.jpg") no-repeat;
+    background-position: center center;
+  }
+
+  &--2 {
+    background: url("../img/censor-parts-bg.jpg") no-repeat;
+    background-position: center center;
+
+    .product-card__description {
+      width: 95%;
+    }
+  }
+}
+
+// Card columns
+
+.card-col-1 {
+  grid-column: col-start 1 / col-start 6;
+}
+
+.card-col-2 {
+  grid-column: col-start 7 / col-end 11;
+}

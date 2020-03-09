@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGK</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="full-column">
+    <header class="header">
+      <nav class="main-nav">
+        <a href="#" class="main-nav__logo">
+          <img src="img/ngk-logo.png" alt="" class="main-nav__logo-image" />
+        </a>
+
+        <ul class="main-menu">
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link">The Company</a>
+          </li>
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link">Products</a>
+          </li>
+
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link">Partners</a>
+          </li>
+
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link">News & Events</a>
+          </li>
+
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link">Inquire Now</a>
+          </li>
+
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link main-btn btn-regular bg-primary"
+              >Part Finder</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- end nav -->
+
+      <!-- start hero -->
+
+      <div class="hero full-column">
+        <div class="hero-content">
+          <h1 class="header-main-heading">
+            <span>DRIVING THE</span> INDUSTRY FORWARD
+          </h1>
+          <p class="header-main-description">
+            As the largest supplier and manufacturer of spark plugs and oxygen
+            sensors for import and domestic vehicles, we are the industry
+            experts you can count on. With rigorous testing standards and
+            countless first to market technologies, NGK, NTK as leaders in
+            innovation.
+          </p>
+
+          <a href="#" class="main-menu__link main-btn btn-large bg-primary"
+            ><img src="img/finder-icon.svg" alt="" />
+            <span>Part Finder</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="full-column">
+      <!-- start boxes container -->
+
+      <div class="boxes-container mt-100 grid-center">
+        <!-- first box -->
+        <div class="product-card product-card--1 card-col-1">
+          <div class="product-card__image-box">
+            <img
+              src="img/ngk-clean-logo.png"
+              alt=""
+              class="product-card__image"
+            />
+            <span class="product-card__image-title">Ignition Parts</span>
+          </div>
+
+          <h2 class="product-card__title">Performance & Reliability</h2>
+          <p class="product-card__description">
+            With a full line of spark plugs, coils, and wire sets, NGK covers
+            95% of import and domestic vehicles on the market.
+          </p>
+          <a href="#" class="product-card__button ghost-btn ghost-btn--white">Shop Now</a>
+          <img
+            src="img/card-ntk-sparkplug.png"
+            alt=""
+            class="product-card__outimage"
+          />
+        </div>
+
+        <!-- second box -->
+        <div class="product-card product-card--2  card-col-2">
+          <div class="product-card__image-box">
+            <img
+              src="img/ntk-clean-logo.png"
+              alt=""
+              class="product-card__image"
+            />
+            <span class="product-card__image-title">Censor Parts</span>
+          </div>
+
+          <h2 class="product-card__title">Precision & Technology</h2>
+          <p class="product-card__description">
+            The world’s largest OE oxygen sensor manufacturer now offers a full
+            line of premium technical sensors for the aftermarket, featuring
+            more than 6,800 SKUs.
+          </p>
+          <a href="#" class="product-card__button ghost-btn ghost-btn--white">Shop Now</a>
+          <img
+            src="img/card-ntk-sparkplug.png"
+            alt=""
+            class="product-card__outimage"
+          />
+        </div>
+      </div>
+
+      <!-- start products -->
+
+      <div class="products-container grid-center mt-100">
+        <!-- start partfinder box -->
+
+        <div class="partfinder-box">
+          <p class="partfinder-box__title">Part Finder</p>
+          <p class="partfinder-box__desc">
+            To filter all parts that are suitable for your vehicle, simply enter
+            it’s specifications below
+          </p>
+          <form action="#" class="partfinder-box__form partfinder-form">
+            <fieldset class="partfinder-form__group">
+              <label for="type">Type:</label>
+              <select id="type" name="type">
+                <option value="" disabled selected hidden
+                  >Select vehicle type</option
+                >
+                <option style="display:none" value="0"
+                  >Open when powered (most valves do this)</option
+                >
+              </select>
+            </fieldset>
+
+            <fieldset class="partfinder-form__group">
+              <label for="type">Year:</label>
+              <select id="type" name="type">
+                <option value="" disabled selected hidden
+                  >Select vehicle type</option
+                >
+              </select>
+            </fieldset>
+
+            <fieldset class="partfinder-form__group">
+              <label for="type">Make:</label>
+              <select id="type" name="type">
+                <option value="" disabled selected hidden
+                  >Select vehicle type</option
+                >
+              </select>
+            </fieldset>
+
+            <fieldset class="partfinder-form__group">
+              <label for="type">Model:</label>
+              <select id="type" name="type">
+                <option value="" disabled selected hidden
+                  >Select vehicle type</option
+                >
+              </select>
+            </fieldset>
+
+            <fieldset class="partfinder-form__group">
+              <label for="type">Engine:</label>
+              <select id="type" name="type">
+                <option value="" disabled selected hidden
+                  >Select vehicle type</option
+                >
+              </select>
+            </fieldset>
+
+            <input
+              class="partfinder-form__submit main-btn btn-regular submit-btn"
+              type="submit"
+              value="Search"
+            />
+          </form>
+        </div>
+
+        <!-- end partfinder box -->
+
+        <!-- start products box -->
+
+        <div class="featured-products">
+          <div class="featured-products__title-box">
+            <img src="" alt="" class="featured-products__icon" />
+            <h2 class="featured-products__title">NGK Products</h2>
+          </div>
+        </div>
+
+        <!-- end products box -->
+
+        <!-- start title card box -->
+
+        <div class="title-card-container grid-center mt-80">
+              <!-- first box -->
+          <div class="title-card card-col-1 ">
+            <div class="title-card__image-box">
+              <img
+                src=""
+                alt=""
+                class="title-card__image"
+              />
+            </div>
+
+
+            <div class="title-card__white-box">
+              <div class="title-card__title-box">
+                <img class="title-card__icon" src="" alt="" />
+                <h2 class="title-card__title">Careers</h2>
+              </div>
+
+              <p class="title-card__desc">
+                Looking for a job? join our team!
+              </p>
+
+              <a href="#" class="title-card__button ghost-btn">Learn More</a>
+
+            </div>
+           
+          </div>
+
+
+            <!-- second box -->
+            <div class="title-card card-col-2">
+            <div class="title-card__image-box">
+              <img
+                src=""
+                alt=""
+                class="title-card__image"
+              />
+            </div>
+
+
+            <div class="title-card__white-box">
+              <div class="title-card__title-box">
+                <img class="title-card__icon" src="" alt="" />
+                <h2 class="title-card__title">Careers</h2>
+              </div>
+
+              <p class="title-card__desc">
+                Looking for a job? join our team!
+              </p>
+
+              <a href="#" class="title-card__button ghost-btn">Learn More</a>
+
+            </div>
+            
+          </div>
+
+        <!-- end products box -->
+      </div>
+
+
+      <!-- start news -->
+
+      <div class="news-container mt-100">
+
+
+      </div>
+
+      <div class="cta-bottom-container mt-100">
+
+
+      </div>
+
+
+
+    </main>
+  </body>
+</html>
