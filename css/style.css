@@ -186,6 +186,78 @@ h2 {
 .card-col-2 {
   grid-column: col-start 7 / col-end 11; }
 
+/* News Section */
+.news-body-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  grid-auto-rows: minmax(100px, auto); }
+
+.news-heading {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 4rem; }
+
+.news-heading .news-heading-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 98.6%;
+  color: #212121; }
+
+.news-heading .news-link-right {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #212121;
+  text-align: right; }
+
+.card-news-image > img {
+  width: 39rem; }
+
+.card-news .card-news-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+  padding-top: 1rem; }
+
+.card-news .card-news-date {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 325;
+  font-size: 12px;
+  line-height: 24px;
+  color: #5a5a5a;
+  margin-top: 1em !important; }
+
+.card-news .card-news-excerpt {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  color: #5a5a5a;
+  padding-top: 1.5rem; }
+
+.card-news .news-btn-link {
+  margin-top: 4rem;
+  max-width: 100%; }
+
+.card-news .news-btn-link > a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #212121;
+  margin-top: 4rem; }
+
 .container-grid {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
