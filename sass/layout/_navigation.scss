@@ -1,9 +1,14 @@
+$navbar-light-color: $color-text-dark;
+$navbar-light-hover-color: $color-primary;
+$navbar-light-active-color: $color-primary;
+$navbar-nav-link-padding-x: 2rem;
+
 .main-nav {
   background: $color-white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10rem;
+  padding: 1rem 10rem !important;
 
   &__logo {
     width: 17.6rem;
