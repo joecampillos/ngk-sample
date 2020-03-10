@@ -44,6 +44,12 @@ $default-transition: all 0.2s ease-in-out;
 $default-box-shadow: 0px 10px 50px rgba(139, 163, 185, 0.4),
   0px 60px 30px rgba(0, 0, 0, 0.02);
 
+// Fontawesome
+
+$fa-font-path: "../vendors/fontawesome-free-5.12.1-web/webfonts";
+
+// BREAKPOINTS
+
 $bp-desktop-md: 72.5em; //1160px
 $bp-tab-lg: 64em; // 1024
 $bp-tab-md: 61.8em; // 990px

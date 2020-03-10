@@ -1,7 +1,79 @@
+// bootstrap nav overwrite
+
 $navbar-light-color: $color-text-dark;
 $navbar-light-hover-color: $color-primary;
 $navbar-light-active-color: $color-primary;
 $navbar-nav-link-padding-x: 2rem;
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.icon-bar {
+  width: 38px;
+  height: 2px;
+  background-color: $color-primary;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 7px;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  outline: none !important;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(40deg);
+  transform-origin: 12% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-42deg);
+  transform-origin: 14% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+.dropdown-menu {
+  border: none;
+  padding: 1rem 0;
+}
+
+.dropdown-item {
+  padding: 0.8rem 2.5rem !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: $color-white !important;
+}
+
+// main nav style
 
 .main-nav {
   background: $color-white;
@@ -33,6 +105,9 @@ $navbar-nav-link-padding-x: 2rem;
     font-weight: 400;
     font-size: 1.5rem;
     color: $color-text-dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__link:hover {

@@ -9,6 +9,7 @@
 
 @import "components/buttons";
 @import "components/cards";
+@import "components/news";
 
 @import "layout/grid";
 @import "layout/header";
@@ -18,3 +19,6 @@
 @import "pages/home";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../vendors/fontawesome-free-5.12.1-web/scss/fontawesome";
+@import "../vendors/fontawesome-free-5.12.1-web/scss/solid";
+@import "../vendors/fontawesome-free-5.12.1-web/scss/regular";
