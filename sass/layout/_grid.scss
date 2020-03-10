@@ -17,6 +17,7 @@
       [col-start] minmax(min-content, 9.5rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [full-end];
+  overflow-x: hidden;
 }
 
 // 12 Column Grid Center
