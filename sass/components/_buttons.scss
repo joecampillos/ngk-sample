@@ -21,7 +21,7 @@
   padding: 1.5rem 4rem !important;
 }
 
-.main-btn.bg-primary:hover {
+.main-btn.bgprimary:hover {
   background: $color-secondary;
 }
 
@@ -34,19 +34,29 @@
   border-radius: $default-border;
   text-transform: uppercase;
   font-size: 1.4rem;
-  &.border-white {
-    border-color: $color-white;
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--black {
+    border-color: $color-black;
   }
 
   &:hover {
     background: $color-primary;
     border: 1px solid transparent;
+    color: $color-white;
   }
 }
 
 .ghost-btn {
   &--white {
     color: $color-white;
+  }
+
+  &--black {
+    border-color: $color-black;
   }
 }
 

@@ -1,11 +1,14 @@
 // FONT
 
 $default-font: 1.6rem;
+$font-size-base: 1.6rem;
 $reg-subtitle: 1.8rem;
 
 // COLORS
 $color-primary: #e60012;
 $color-secondary: #01813f;
+
+$primary: #e60012;
 
 $color-black: #212121;
 $color-white: #ffffff;
@@ -16,9 +19,14 @@ $color-grey-light: #e0e0e0;
 $color-grey-light2: #c4c4c4;
 $color-mid-grey: #6c7489;
 
+$link-color: #212121;
+
 // FONT VARIABLES
 $font-primary: "Montserrat", sans-serif;
-$font-display: "OSTD", sans-serif;
+$font-family-sans-serif: "Montserrat", sans-serif;
+
+$line-height-base: 1.6;
+$font-weight-base: 300;
 
 // GRID
 $grid-center: center-start / center-end;
