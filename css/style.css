@@ -11,12 +11,16 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 40em) {
+    html {
+      font-size: 56.25%; } }
 
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  line-height: 1.6; }
+  line-height: 1.6;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none !important;
@@ -42,6 +46,10 @@ h2 {
 .bgprimary {
   background: #e60012;
   color: #ffffff !important; }
+
+.bgwhite {
+  background: #ffffff;
+  color: #212121; }
 
 .mt-100 {
   margin-top: 10rem; }
@@ -171,6 +179,9 @@ h2 {
   .product-card__outimage {
     position: absolute;
     right: -16rem; }
+    @media only screen and (max-width: 40em) {
+      .product-card__outimage {
+        right: -12rem; } }
   .product-card--1 {
     background: url("../img/ignition-parts-bg.jpg") no-repeat;
     background-position: center center; }
@@ -182,21 +193,29 @@ h2 {
 
 .card-col-1 {
   grid-column: col-start 1 / col-start 6; }
+  @media only screen and (max-width: 53.75em) {
+    .card-col-1 {
+      grid-column: col-start 1 / col-end 12; } }
 
 .card-col-2 {
   grid-column: col-start 7 / col-end 11; }
+  @media only screen and (max-width: 53.75em) {
+    .card-col-2 {
+      grid-column: col-start 1 / col-end 12; } }
 
 /* News Section */
 .news-body-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2em;
-  grid-auto-rows: minmax(100px, auto); }
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  grid-gap: 3em; }
 
 .news-heading {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 70% 30%;
   padding-bottom: 4rem; }
+  @media only screen and (max-width: 25.8em) {
+    .news-heading {
+      grid-template-columns: 100%; } }
 
 .news-heading .news-heading-title {
   font-family: "Montserrat", sans-serif;
@@ -214,15 +233,19 @@ h2 {
   line-height: 24px;
   color: #212121;
   text-align: right; }
+  @media only screen and (max-width: 25.8em) {
+    .news-heading .news-link-right {
+      text-align: left;
+      margin-top: 2rem; } }
 
 .card-news-image > img {
-  width: 39rem; }
+  width: 100%; }
 
 .card-news .card-news-title {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 16px !important;
   line-height: 24px;
   color: #212121;
   padding-top: 1rem; }
@@ -258,6 +281,32 @@ h2 {
   color: #212121;
   margin-top: 4rem; }
 
+.cta-image {
+  padding: 10.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .cta-image--home {
+    background: url("../../img/cta-home-img.jpg") no-repeat;
+    background-size: cover; }
+  .cta-image__heading {
+    color: #ffffff;
+    font-size: 4rem !important;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 6rem; }
+    @media only screen and (max-width: 72.5em) {
+      .cta-image__heading {
+        width: 60%; } }
+    @media only screen and (max-width: 48em) {
+      .cta-image__heading {
+        width: 75%; } }
+    @media only screen and (max-width: 40em) {
+      .cta-image__heading {
+        width: 85%; } }
+
 .container-grid {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
@@ -265,6 +314,9 @@ h2 {
 .full-column {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media only screen and (max-width: 40em) {
+    .full-column {
+      grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end]; } }
 
 .grid-center {
   display: grid;
@@ -273,6 +325,10 @@ h2 {
 
 .header {
   grid-column: full-start / full-end; }
+
+@media only screen and (max-width: 79.3em) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem 1.3rem !important; } }
 
 .navbar-light .navbar-toggler {
   border: none; }
@@ -334,6 +390,12 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem !important; }
+  @media only screen and (max-width: 79.3em) {
+    .main-nav {
+      padding: 1rem 5rem !important; } }
+  @media only screen and (max-width: 53.75em) {
+    .main-nav {
+      padding: 1rem 5rem !important; } }
   .main-nav__logo {
     width: 17.6rem; }
   .main-nav__logo-image {
@@ -393,12 +455,15 @@ h2 {
   width: 60%;
   line-height: 1.8;
   padding: 1.5rem 0; }
+  @media only screen and (max-width: 53.75em) {
+    .header-main-description {
+      width: 100%; } }
 
 main {
   grid-column: full-start / full-end; }
 
 .boxes-container {
-  grid-column: center-start/center-end; }
+  grid-column: center-start / center-end; }
 
 .products-container {
   grid-column: center-start / center-end; }
@@ -412,6 +477,10 @@ main {
   flex-direction: column;
   align-items: center;
   width: 26rem; }
+  @media only screen and (max-width: 53.75em) {
+    .partfinder-box {
+      grid-column: col-start 1 / col-end 12;
+      width: 100%; } }
   .partfinder-box__title {
     font-size: 1.6rem;
     margin-bottom: 2rem; }
@@ -448,6 +517,12 @@ main {
 
 .title-card-container {
   grid-column: center-start / center-end; }
+
+.news-container {
+  grid-column: center-start / center-end; }
+
+.cta-bottom-container {
+  grid-column: full-start / full-end; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)

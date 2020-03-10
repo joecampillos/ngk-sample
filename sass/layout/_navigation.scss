@@ -5,6 +5,12 @@ $navbar-light-hover-color: $color-primary;
 $navbar-light-active-color: $color-primary;
 $navbar-nav-link-padding-x: 2rem;
 
+.navbar-expand-lg .navbar-nav .nav-link {
+  @media only screen and (max-width: $bp-desktop-lg) {
+    padding: 1rem 1.3rem !important;
+  }
+}
+
 .navbar-light .navbar-toggler {
   border: none;
 }
@@ -81,6 +87,14 @@ $navbar-nav-link-padding-x: 2rem;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem !important;
+
+  @media only screen and (max-width: $bp-desktop-lg) {
+    padding: 1rem 5rem !important;
+  }
+
+  @media only screen and (max-width: $bp-tab-pt) {
+    padding: 1rem 5rem !important;
+  }
 
   &__logo {
     width: 17.6rem;

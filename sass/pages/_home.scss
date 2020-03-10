@@ -44,6 +44,10 @@
   width: 60%;
   line-height: 1.8;
   padding: 1.5rem 0;
+
+  @media only screen and (max-width: $bp-tab-pt) {
+    width: 100%;
+  }
 }
 
 // MAIN BODY
@@ -55,7 +59,7 @@ main {
 // CARD /BOX SECTION
 
 .boxes-container {
-  grid-column: center-start/center-end;
+  grid-column: center-start / center-end;
 }
 
 // PRODUCTS SECTION
@@ -75,6 +79,11 @@ main {
   flex-direction: column;
   align-items: center;
   width: 26rem;
+
+  @media only screen and (max-width: $bp-tab-pt) {
+    grid-column: col-start 1 / col-end 12;
+    width: 100%;
+  }
 
   &__title {
     font-size: $default-font;
@@ -143,4 +152,9 @@ main {
 // news-container
 
 .news-container {
+  grid-column: center-start / center-end;
+}
+
+.cta-bottom-container {
+  grid-column: full-start / full-end;
 }

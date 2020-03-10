@@ -1,18 +1,20 @@
-
 /* News Section */
 
 .news-body-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2em;
-  grid-auto-rows: minmax(100px, auto); 
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  grid-gap: 3em;
 }
 
 .news-heading {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 70% 30%;
   padding-bottom: 4rem;
 
+  @media only screen and (max-width: $bp-mobile-sm) {
+    grid-template-columns: 100%;
+  }
 }
 
 .news-heading .news-heading-title {
@@ -32,20 +34,28 @@
   line-height: 24px;
   color: $color-black;
   text-align: right;
+
+  @media only screen and (max-width: $bp-mobile-sm) {
+    text-align: left;
+    margin-top: 2rem;
+  }
+}
+
+.card-news {
 }
 
 .card-news-image > img {
-  width: 39rem;
+  width: 100%;
 }
 
 .card-news .card-news-title {
   font-family: $font-primary;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 16px !important;
   line-height: 24px;
   color: $color-black;
-  padding-top: 1rem; 
+  padding-top: 1rem;
 }
 
 .card-news .card-news-date {
@@ -54,7 +64,7 @@
   font-size: 12px;
   line-height: 24px;
   color: $color-text-dark;
-  margin-top: 1em !important; 
+  margin-top: 1em !important;
 }
 
 .card-news .card-news-excerpt {

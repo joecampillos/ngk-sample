@@ -49,6 +49,10 @@
   &__outimage {
     position: absolute;
     right: -16rem;
+
+    @media only screen and (max-width: $bp-mobile-lg) {
+      right: -12rem;
+    }
   }
 
   &--1 {
@@ -70,8 +74,16 @@
 
 .card-col-1 {
   grid-column: col-start 1 / col-start 6;
+
+  @media only screen and (max-width: $bp-tab-pt) {
+    grid-column: col-start 1 / col-end 12;
+  }
 }
 
 .card-col-2 {
   grid-column: col-start 7 / col-end 11;
+
+  @media only screen and (max-width: $bp-tab-pt) {
+    grid-column: col-start 1 / col-end 12;
+  }
 }
