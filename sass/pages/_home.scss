@@ -132,21 +132,133 @@ main {
 // PRODUCTS
 .featured-products {
   grid-column: col-start 4 / col-end 12;
+  grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
 
   &__title-box {
+     grid-column: center-start / center-end;
+  }
+
+  &__border {
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid #E2E4E8;
+  }
+
+  &__title-head {
+    display: grid;
+    grid-template-columns: 0fr 3.6fr 1fr;
+  }
+
+  &__download {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-black;
+    margin-top: 0.5rem;
+  }
+
+  &__icon-angle-right {
+    padding-left: 1rem;
+    color: $color-primary;
+  }
+
+  &__product-content {
+    width: 28.3em;
+  }
+
+  &__title-primary {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem !important;
+    line-height: 98.6%;
+    text-transform: uppercase;
+    color: $color-primary;
+    padding-top: 5rem;
+  }
+
+  &__desc {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-text-dark;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
   }
 
   &__icon {
   }
 
   &__title {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
   }
+
+  &__product-title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px !important;
+    line-height: 98.6%;
+    text-transform: uppercase;
+    color: $color-text-dark;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  &__carousel-content {
+    display: grid;
+    grid-columns: repeat(4, 1fr);
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  &__carousel {
+    
+  }
+
+  &__carousel-cell {
+    width: 26%;
+    height: 20rem;
+  }
+
+  &__product-content {
+    display: grid;
+    width: 28.3em;
+
+  }
+
+  &__product-two-column {
+    max-width: 1rem;
+    grid-column: col-start 3 / col-end 12;
+  }
+}
+
+.flickity-button  {
+  background-color: #000;
 }
 
 // TITLE CARD
 
 .title-card-container {
+  display: grid;
   grid-column: center-start / center-end;
+  grid-gap: repeat(auto-fit, 5rem);
+}
+
+.title-card {
+  &__title {
+    margin-top: 1rem;
+  }
+
+  &__title-box {
+    display: grid;
+    grid-template-columns: 15% 85%;
+  }
+
 }
 
 // news-container

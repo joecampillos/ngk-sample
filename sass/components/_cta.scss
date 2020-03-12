@@ -13,6 +13,11 @@
   &--about {
   }
 
+  &--partner {
+    background: url("../../img/cta-partner-img.png") no-repeat;
+    background-size: cover;
+  }
+
   &__heading {
     color: $color-white;
     font-size: 4rem !important;
@@ -32,6 +37,18 @@
     @media only screen and (max-width: $bp-mobile-lg) {
       width: 85%;
     }
+  }
+
+  &__desc {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 98.6%;
+    text-align: center;
+    color: $color-white !important;
+    margin-top: -3rem;
+    margin-bottom: 6rem;
   }
 
   &__button {

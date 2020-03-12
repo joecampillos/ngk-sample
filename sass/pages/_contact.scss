@@ -1,0 +1,121 @@
+.faq-header {
+	grid-column: center-start / center-end;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-center;
+  	margin-bottom: 10rem;
+
+  	&__title {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 36px;
+		color: $color-black;
+        margin-top: 2rem;
+  		width: 38.9em;
+  	}
+}
+
+
+/*Accordion*/
+
+.faq-accordion {
+	width: 80% !important;
+	margin-top: 2rem;
+}
+
+.first-set{
+  	position: relative;
+  	width: 100%;
+  	height: auto;
+  	background-color: #ffffff;
+}
+
+.first-set > a {
+  	display: block;
+  	padding: 20px 0px;
+  	font-family: &font-primary;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 28px;
+  	text-decoration: none;
+	text-transform: uppercase;
+	color: $color-black;
+  	border-bottom: 1px solid #ddd;
+  	-webkit-transition:all 0.2s linear;
+  	-moz-transition:all 0.2s linear;
+  	transition:all 0.2s linear;
+}
+
+.first-set > a i {
+  	float: right;
+  	margin-top: 2px;
+  	color: $color-black;
+}
+
+.first-set > a.active {
+  	color: $color-primary;
+}
+
+.first-accordion-content {
+  	background-color: #fff;
+  	border-bottom: 1px solid #ddd;
+  	display:none;
+}
+
+.first-accordion-content p {
+  	padding: 10px 15px;
+  	margin: 0;
+  	color: #333;
+}
+
+
+
+
+.second-set{
+  	position: relative;
+  	width: 100%;
+  	height: auto;
+  	background-color: #ffffff;
+}
+
+.second-set .faqSecondaryLink {
+  	display: block;
+  	padding: 20px 0px;
+  	font-family: &font-primary;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 28px;
+  	text-decoration: none;
+	text-transform: uppercase;
+	color: $color-black;
+  	border-bottom: 1px solid #ddd;
+  	-webkit-transition:all 0.2s linear;
+  	-moz-transition:all 0.2s linear;
+  	transition:all 0.2s linear;
+}
+
+.second-set .faqSecondaryLink .faqArrow{
+  	float: right;
+  	margin-top: 2px;
+  	color: $color-black;
+}
+
+.second-set .faqSecondaryLink.active {
+  	color: $color-primary;
+}
+
+.second-accordion-content {
+  	background-color: #fff;
+  	border-bottom: 1px solid #ddd;
+  	display:none;
+}
+
+.second-accordion-content p {
+  	padding: 10px 15px;
+  	margin: 0;
+  	color: #333;
+}

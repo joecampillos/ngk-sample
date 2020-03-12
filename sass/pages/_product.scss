@@ -1,0 +1,161 @@
+.product-hero {
+  background: url("../img/product-hero.png") no-repeat;
+  background-size: cover;
+  height: 27.5em;
+  width: 100%;
+  align-items: center;
+}
+
+.product-hero-content {
+  grid-column: center-start / center-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+}
+
+.product-header-main-heading {
+  font-size: 6rem;
+  color: $color-white;
+  line-height: 1;
+  margin-bottom: 3rem;
+    align-items: flex-center;
+
+  &::after {
+    content: "";
+    background: $color-primary;
+    height: 2px;
+    width: 10rem;
+    margin: 2rem 0;
+    display: block;
+   align-items: flex-center;
+  }
+}
+
+.product-header-main-description {
+  color: $color-white;
+  width: 60%;
+  line-height: 1.8;
+  padding: 1.5rem 0;
+ align-items: flex-center;
+
+  @media only screen and (max-width: $bp-tab-pt) {
+    width: 100%;
+  }
+}
+
+
+// Product Header Content 
+
+.product-header {
+	grid-column: center-start / center-end;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-center;
+
+    &__brand {
+        display: grid;
+        grid-template-columns: 12% 88%;
+    }
+
+    &__img-logo {
+        max-width: 12rem;
+    }
+
+    &::after {
+      content: "";
+      height: 1px;
+      background: #E2E4E8;
+      position: relative;
+      width: 100%;
+      display: block;
+      margin-top: 2rem;
+      z-index: 1;
+    }
+
+    &::before {
+      content: "";
+      height: 2px;
+      width: 15rem;
+      background: $color-primary;
+      position: absolute;
+      margin-top: 21.1rem;
+      display: block;
+      z-index: 2;
+    }
+
+  	&__title {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 36px;
+		color: $color-black;
+        margin-top: 2rem;
+  	}
+
+  	&__desc {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 28px;
+		color: $color-text-dark;
+		width: 869px;
+		padding-top: 2rem;
+  	}
+}
+
+// Product Container
+
+.card-product-body-content {
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  	grid-gap: 2em;
+}
+
+.product-container {
+	grid-column: center-start / center-end;
+	padding-bottom: 5rem;
+}
+
+// #  Product Card
+.card-product {
+ 	padding: 3rem;
+ 	box-shadow:0px 0px 15px rgba(0,0,0,0.15);
+
+ 	&__image {
+ 		width: 30rem;
+ 	}
+
+ 	&__title {
+ 		font-family: $font-primary;
+	  	font-style: normal;
+	  	font-weight: 500;
+	  	font-size: 16px !important;
+	  	line-height: 24px;
+	  	text-transform: uppercase;
+	  	color: $color-primary;
+	  	padding-top: 1rem;
+ 	}
+
+ 	&__excerpt {
+ 		font-family: $font-primary;
+	  	font-style: normal;
+	  	font-weight: 300;
+	  	font-size: 14px;
+	  	line-height: 28px;
+	  	color: $color-text-dark;
+	  	padding-top: 1.5rem;
+ 	}
+
+ 	&__btn-link {
+ 		font-family: $font-primary;
+	  	font-style: normal;
+	  	font-weight: 500;
+	  	font-size: 14px;
+	  	line-height: 28px;
+	  	text-transform: uppercase;
+	  	color: $color-black;
+	  	margin-top: 4rem;
+ 	}
+}
