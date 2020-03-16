@@ -1,9 +1,21 @@
-.partner-hero {
-  background: url("../img/partner-hero.png") no-repeat;
-  background-size: cover;
-  height: 27.5em;
-  width: 100%;
-  align-items: center;
+.hero-content {
+    &--container {
+        grid-column: center-start / center-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    &--header {
+        grid-column: center-start / center-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
 }
 
 .partner-container {

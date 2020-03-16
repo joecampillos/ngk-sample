@@ -1,3 +1,229 @@
+.hero-content {
+    &--container {
+        grid-column: center-start / center-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    &--header {
+        grid-column: center-start / center-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+.faq-form-container {
+	grid-column: center-start / center-end;
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  	grid-gap: 4em;
+  	margin-bottom: 3rem;
+}
+
+.faq-form-overlay {
+	position: relative;
+	grid-column: center-start / center-end;
+	width: 100%;
+}
+
+.faq-form {
+
+
+	// Form Contact
+
+	&__message-form {
+		margin-top: 5rem;
+		background-color: $color-white;
+		padding: 3rem;
+	}
+
+	&__input-field {
+		padding: 0.9rem;
+		font-size: 1.6rem !important;
+	}
+
+	&__column-two {
+	  	display: grid;
+	  	grid-template-columns: repeat(2, 1fr);
+	  	grid-gap: 1.9em;
+	}
+
+	&__column-group-one {
+		position: relative;
+	  	display: grid;
+	  	grid-template-columns: 1fr;
+	  	margin-top: 2.5rem;
+	}
+
+	&__submit-button {
+		margin-top: 5rem;
+		grid-column: center-start / center-end;
+	  	display: grid;
+	  	grid-template-columns: repeat(2.5, 1fr);
+	}
+
+	&__input-group-subject {
+		margin-top: 2rem;
+	}
+
+	&__title {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 30px !important;
+		line-height: 36px;
+		color: #212121;
+  	}
+
+  	&__desc {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 28px;
+		color: #5A5A5A;
+		padding-top: 3rem !important;
+  	}
+
+
+
+  	// Contact Info
+
+  	&__contact {
+  		padding: 3rem;
+  		background: $color-primary;
+  		grid-column: center-start / center-end;
+  	}
+
+  	&__contact-content {
+  		display: grid;
+	  	grid-template-columns: repeat(2, 1fr);
+	  	grid-gap: 4em;
+	  	margin-left: 2rem;
+  	}
+
+  	&__phone-title {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px !important;
+		line-height: 28px;
+		color: $color-white;
+  	}
+
+  	&__phone-list {
+  		list-style: none;
+  	}
+
+  	&__email-title {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px !important;
+		line-height: 28px;
+		color: $color-white;
+  	}
+
+  	&__phone-list-number {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px !important;
+		line-height: 28px;
+		color: $color-white;
+
+  	}
+
+  	&__email-list {
+  		list-style: none;
+  	}
+
+  	&__email-list-info {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px !important;
+		line-height: 28px;
+		color: $color-white;
+  	}
+
+  	&__business-days {
+	  	margin-top: 1rem;
+	  	margin-left: 2rem;
+  	}
+
+  	&__business-days-title {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 28px;
+		color: $color-white;
+  	}
+
+  	&__business-days-time {
+  		margin-left: 1rem;
+  	}
+
+  	&__img {
+  		position: relative;
+		grid-column: center-start / center-end;
+		width: 100%;
+  	}
+
+  	&__info {
+  		padding: 3rem;
+  		background-color: $color-white;
+  	}
+
+  	&__info-margin {
+  		margin-left: 1rem;
+  	}
+  	
+  	&__info-title {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px !important;
+		line-height: 34px;
+		color: #E60012;
+		border-bottom: 1px solid #E2E4E8;
+		padding: 1rem;
+  	}
+
+  	&__info-address {
+  		list-style: none;
+  		margin-top: 3rem;
+  	}
+
+  	&__info-address-list {
+  		font-family: $font-primary;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 28px;
+		color: #5A5A5A;
+  	}
+
+  	&__info-social {
+  		list-style: none;
+  		margin-top: 2rem;
+  		display: flex;
+  		flex-direction: row;
+  	}
+
+  	&__info-social-list {
+  		margin: 1rem;
+  	}
+}
+
+
 .faq-header {
 	grid-column: center-start / center-end;
   	display: flex;

@@ -18,6 +18,11 @@
     background-size: cover;
   }
 
+  &--parts-finder {
+    background: url("../../img/cta-parts-finder-img.png") no-repeat;
+    background-size: cover;
+  }
+
   &__heading {
     color: $color-white;
     font-size: 4rem !important;
